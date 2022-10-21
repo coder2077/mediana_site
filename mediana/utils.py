@@ -31,10 +31,10 @@ def load_config(path: str = 'site.ini'):
 
 def get_file_path():
 	config = load_config()
-	if config.site.debug == 'True':
-		return "D://Projects/projects/mediana_project"
-	else:
-		return f"/root"
+	# if config.site.debug == '':
+	# 	return "D://Projects/projects/mediana_project"
+	# else:
+	return f"/root"
 
 def write_users_to_csv(queryset):
 	file_path = get_file_path()
